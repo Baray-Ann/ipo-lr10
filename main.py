@@ -33,11 +33,6 @@ with open('data.json', 'w', encoding = 'utf-8') as file:
 with open('data.json', 'r', encoding = 'utf-8') as file:
     data = json.load(file)
 
-
-with open('data.json', 'r', encoding = 'utf-8') as file:
-    data = json.load(file)
-
-
 html_content = f"""
 <!DOCTYPE html>
 <html>
