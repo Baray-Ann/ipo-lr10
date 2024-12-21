@@ -17,7 +17,7 @@ teachers_data = []
 
 for data in info:
     teachers_names_tag = data.select_one("h3")
-    teacher_name = teachers_names_tag.get_text(strip=True) if teachers_names_tag else "No teacher"
+    teacher_name = teachers_names_tag.get_text(strip = True) if teachers_names_tag else "No teacher"
 
     teachers_posts_tag = data.select_one("li", class_ = "tss")
     teacher_post = teachers_posts_tag.get_text(strip = True) if teachers_posts_tag else "No post"
